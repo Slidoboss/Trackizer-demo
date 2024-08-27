@@ -32,7 +32,7 @@ class MainApp extends StatelessWidget {
 var _kColorScheme =
     ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 80, 46, 148));
 ThemeData _themeData = ThemeData().copyWith(
-  scaffoldBackgroundColor: const Color.fromARGB(255, 21, 17, 30),
+  scaffoldBackgroundColor: const Color.fromARGB(255, 39, 32, 57),
   colorScheme: _kColorScheme,
   filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(backgroundColor: Colors.deepOrangeAccent)),
