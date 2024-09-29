@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 //SCREENS
+import 'socialsauth_view.dart';
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
@@ -44,10 +45,17 @@ class OnboardingView extends StatelessWidget {
                   height: screenHeight * 0.06,
                   width: screenWidth * 0.90,
                   child: FilledButton.tonal(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (ctx) => const SocialsAuthView(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Get Started',
-                      style: Theme.of(context).textTheme.titleMedium,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                   ),
                 ),
@@ -58,12 +66,12 @@ class OnboardingView extends StatelessWidget {
                   child: FilledButton.tonal(
                     onPressed: () {},
                     style: FilledButton.styleFrom(
-                      elevation: 4,
+                        elevation: 4,
                         backgroundColor:
                             Theme.of(context).colorScheme.onSurfaceVariant),
                     child: Text(
                       'I have an account',
-                      style: Theme.of(context).textTheme.titleMedium,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                   ),
                 ),
