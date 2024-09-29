@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //SCREENS
-//import './onboarding_view.dart';
-import './gettingstarted_view.dart';
+import './onboarding_view.dart';
+//import './gettingstarted_view.dart';
 
 void main() {
   runApp(
@@ -22,8 +22,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: _themeData,
-      //home: const OnboardingView(),
-      home: const GettingstartedView(),
+      home: const OnboardingView(),
+      //home: const GettingstartedView(),
     );
   }
 }
@@ -37,13 +37,13 @@ ThemeData _themeData = ThemeData().copyWith(
   filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(backgroundColor: Colors.deepOrangeAccent)),
   textTheme: TextTheme(
-    titleLarge: GoogleFonts.inter(fontWeight: FontWeight.bold),
+    titleLarge: GoogleFonts.inter(fontWeight: FontWeight.bold, fontSize: 28),
     titleMedium: GoogleFonts.inter(
-      fontSize: 16,
+      fontSize: 24,
       fontWeight: FontWeight.bold,
     ),
     titleSmall: GoogleFonts.inter(
-      fontSize: 12,
+      fontSize: 20,
       fontWeight: FontWeight.bold,
     ),
     bodyLarge: GoogleFonts.inter(
@@ -65,6 +65,18 @@ ThemeData _themeData = ThemeData().copyWith(
     labelSmall: GoogleFonts.inter(
       fontSize: 8,
       fontWeight: FontWeight.w300,
+    ),
+    displayLarge: GoogleFonts.inter(
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+    ),
+    displayMedium: GoogleFonts.inter(
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
+    ),
+    displaySmall: GoogleFonts.inter(
+      fontSize: 12,
+      fontWeight: FontWeight.w600,
     ),
   ),
 );
